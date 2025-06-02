@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokémonGame.ConsoleGame", "PokémonGame.ConsoleGame\PokémonGame.ConsoleGame.csproj", "{4CABB505-9DEF-4371-9BE6-73B964F4946D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CABB505-9DEF-4371-9BE6-73B964F4946D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CABB505-9DEF-4371-9BE6-73B964F4946D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CABB505-9DEF-4371-9BE6-73B964F4946D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CABB505-9DEF-4371-9BE6-73B964F4946D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4CABB505-9DEF-4371-9BE6-73B964F4946D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {125DDCB2-D889-4CDA-AB10-8B3429782651}
+	EndGlobalSection
+EndGlobal
