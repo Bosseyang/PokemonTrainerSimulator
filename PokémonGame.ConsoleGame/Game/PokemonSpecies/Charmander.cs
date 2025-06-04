@@ -9,7 +9,7 @@ namespace PokémonGame.ConsoleGame.Game.PokemonSpecies
 {
     public class Charmander : FirePokemon
     {
-        public Charmander(string name, int level, List<Attack> attacks)
+        public Charmander(int level, List<Attack> attacks)
             : base("Charmander", level, attacks) { }
     }
 }

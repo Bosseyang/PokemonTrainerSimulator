@@ -9,7 +9,7 @@ namespace PokémonGame.ConsoleGame.Game.PokemonSpecies
 {
     public class Squirtle : WaterPokemon
     {
-        public Squirtle(string name, int level, List<Attack> attacks)
+        public Squirtle(int level, List<Attack> attacks)
             : base("Squirtle", level, attacks) { }
     }
 }
