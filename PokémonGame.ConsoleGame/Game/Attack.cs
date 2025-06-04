@@ -1,12 +1,17 @@
-﻿public class Attack(string Name, ElementType Type, int BasePower)
+﻿public class Attack
 {
-    private string name { get; set; }
-    private ElementType type { get; set; }
-    private int basePower { get; set; }
+    public string Name { get; }
+    private ElementType Type { get; }
+    private int BasePower { get; }
+    public Attack(string name, ElementType type, int basePower)
+    {
+        Name = name;
+        Type = type;
+        BasePower = basePower;
+    }
 
     public void Use(int level)
     {
-
-        Console.WriteLine($"Flamethrower hits with total power {BasePower+level}");
+        Console.WriteLine($"{Name} hits with total power {BasePower + level}");
     }
 }
