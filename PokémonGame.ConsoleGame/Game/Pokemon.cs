@@ -2,8 +2,8 @@
 
 public abstract class Pokemon
 {
-    public string name;
-    public int level;
+    protected string name;
+    protected int level;
 
     //Property: Validate Name
     public string Name
@@ -33,7 +33,7 @@ public abstract class Pokemon
     public ElementType Type { get; protected set; }
     public List<Attack> Attacks { get; }
 
-    public Pokemon(string name, int level, List<Attack> attacks)
+    public Pokemon(string name, int level, List<Attack> attacks) 
     {
         Name = name;
         Level = level;
@@ -48,6 +48,8 @@ public abstract class Pokemon
 
     }
 
+    //TODO: Här tänker jag att jag kan skapa en helper funktion som hanterar Console.ReadLine
+    //Som då också ska kunna testas
     public void Attack()
     {
         // Lets the user pick an attack from the list of attacks and invoke its .Use-method.

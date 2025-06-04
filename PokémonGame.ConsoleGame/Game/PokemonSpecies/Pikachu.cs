@@ -1,4 +1,5 @@
 ﻿using PokémonGame.ConsoleGame.Game.Subclass;
+using PokémonGame.ConsoleGame.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,10 +8,12 @@ using System.Threading.Tasks;
 
 namespace PokémonGame.ConsoleGame.Game.PokemonSpecies
 {
-    public class Pikachu : ElectricPokemon
+    public class Pikachu : ElectricPokemon , IEvolvable
     {
+
+    
         public Pikachu(int level, List<Attack> attacks)
-            : base("Pikachu", level, attacks) { }
+            : base("Pikachu", level, attacks) { } 
 
         public void Evolve()
         {
