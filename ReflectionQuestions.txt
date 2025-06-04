@@ -1,0 +1,29 @@
+Reflection Questions
+Answer the following questions based on the code you’ve written and tested:
+
+1.	F:	When you create a Pokémon and try to access its fields directly – does it work? Why or why not?
+	A:	No it doesn't work, since the fields are encapsulated. We have to go through the Properties
+
+2.	F:	If you later want to add a new property that applies to all Electric-type Pokémon, where should you place it to avoid repetition?
+	A:	I should put it in the ElectricPokemon class
+
+3.	F:	If instead the new property should apply to all Pokémon, where would be the correct place to define it?
+	A:	We defined it in the Pokemon class, which is the base class.
+
+4.	F:	What happens if you try to add a Charmander to a list that only allows WaterPokemon?
+	A:	Error: "Cannot convert '...charmander' to Subclass '...WaterPokemon'", 
+		since Charmander is a Fire type it doesn't inherit from WaterPokemon.	
+
+5.	F:	You want to store different types of Pokémon – Charmander, Squirtle, and Pikachu – in the same list. 
+		What type should the list have for that to work?
+	A:	I just use List<Pokemon>, using the base class: Pokemon, since every pokemon inherits from it.
+
+6.	F:	When you loop through the list and call Attack(), what ensures that the correct attack behavior is 
+		executed for each Pokémon?
+	A:	Since every pokemon has it's own List set with it's own attacks. The Lists are created only as instances
+		using the Attack() method as a "template". They all hold different data but same type through Attack().
+
+7.	F:	If you create a method that only exists on Pikachu, why can’t you call it directly when it’s stored 
+		in a List<Pokemon>? How could you still access it?
+	A:	Since Pikachu is stored as a Pokemon. I can access it by casting it to Pikachu with: ((Pikachu)pokemon).Method()
+		Pokemon itself doesn't contain the method, only Pikachu has it.

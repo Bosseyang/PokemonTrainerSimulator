@@ -10,8 +10,6 @@ namespace PokémonGame.ConsoleGame.Game.PokemonSpecies
 {
     public class Pikachu : ElectricPokemon , IEvolvable
     {
-
-    
         public Pikachu(int level, List<Attack> attacks)
             : base("Pikachu", level, attacks) { } 
 

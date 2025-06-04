@@ -1,4 +1,5 @@
 ﻿using PokémonGame.ConsoleGame.Game.PokemonSpecies;
+using PokémonGame.ConsoleGame.Game.Subclass;
 using PokémonGame.ConsoleGame.Interfaces;
 
 //Predefined attacks
@@ -20,7 +21,18 @@ var pikachu = new Pikachu(14, new List<Attack> { thunderbolt, spark });
 //Create list of Pokémon
 var listPokemons = new List<Pokemon> { charmander, squirtle, pikachu};
 
-foreach(var pokemon in listPokemons)
+
+#region Test Reflection Question 4
+//Test Reflection Question 4. What happens if you try to add a Charmander to a list that only allows WaterPokemon?
+//var waterPokemons = new List<WaterPokemon>();
+
+//var charmanderWater = new Charmander(5, new List<Attack> { flamethrower, ember });
+
+//waterPokemons.Add(charmanderWater);
+
+
+#endregion
+foreach (var pokemon in listPokemons)
 {
     pokemon.RaiseLevel();
     //Kör RandomAttack istället för Attack så jag får samma output som i exempel output
